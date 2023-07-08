@@ -336,6 +336,14 @@ body {
   padding: 40px;
 
 }
+.next {
+ display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  color: #FCCD26;
+  font-size: x-large;
+}
 
 /* 질문 사각형 */
 
