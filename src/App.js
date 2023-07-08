@@ -837,7 +837,7 @@ return (
                       onClick={() => handleCkAnswer(aval.type, idx)}
                     >
                       {" "}
-                      {aidx} {aval.type}
+                      {aval.type}
                       {aval.text}
                     </div>
                   ))}
