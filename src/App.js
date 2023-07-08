@@ -579,19 +579,19 @@ function App() {
 return (
   <div className="questionLayout">
     <div className="questionAnswerLayout">
-      <div className="questionList">
+      
   
           {page < 200 ? (
-            <div className="questionItemlayout">
-              <div className="chatListLayout">
+            <div>
+            
                 <div className="rectangle1">
                   <div></div>
                   <div>{question}</div>
                 </div>
-                <div className="personListLayout">
+
+                <div className="">
                   <div className="personBox">
                     <div className="personText">{answer}</div>
-                  </div>
                   </div>
               </div>
             </div>
@@ -619,7 +619,7 @@ return (
         
       </div>
     </div>
-  </div>
+
 );
 
  };

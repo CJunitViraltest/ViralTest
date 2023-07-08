@@ -165,6 +165,8 @@ body {
 
 
 .questionItemlayout {
+ justify-content: center;
+  font-family: 'Jua', sans-serif;
   display: flex;
   flex:1;
   height:100%;
@@ -195,7 +197,7 @@ body {
   border: 5px solid #FFD84E;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  margin-bottom: 220px;
+  margin-bottom: 210px;
 }
 .personText {
   padding-top: 50%;
