@@ -63,14 +63,14 @@ function App() {
     },
   
     {
-      q: [ "OOO님 안녕하세요 ~ CJ UNIT 담당자입니다. 저희가 n/n에 제주도로 첫수업 현장지원을 갈 예정인데 일정 괜찮으신가요?" ],
+      q: [ "OOO님 안녕하세요 ~ CJ UNIT 담당자입니다. \n 저희가 n/n에 제주도로 첫수업 현장지원을 갈 예정인데 일정 괜찮으신가요?" ],
       p: ["담당자님"],
       a: [
         { text: "다음" },
       ],
     },
     {
-      q: ["OOO님 안녕하세요 ~ CJ UNIT 담당자입니다. 저희가 n/n에 제주도로 첫수업 현장지원을 갈 예정인데 일정 괜찮으신가요?"],
+      q: ["OOO님 안녕하세요 ~ CJ UNIT 담당자입니다. \n 저희가 n/n에 제주도로 첫수업 현장지원을 갈 예정인데 일정 괜찮으신가요?"],
       p: ["담당자님"],
       a: [
         { type: "E", text: "완전 가능합니다 !! (애들을 대면으로 만날 수 있는 기회에 내가 되다니 너무 신난다 ! 애들이랑 만나서 많이 친해지고 와야지 ~)" },
@@ -236,7 +236,7 @@ function App() {
       ],
     },
     {
-      q: ["유닛중 학생들 너무 귀엽지 않아? 비대면이라 어색할텐데 재밌게 잘 따라와줘서 애들한테 항상 너무 고마워❤"],
+      q: ["유닛중 학생들 너무 귀엽지 않아? \n 비대면이라 어색할텐데 재밌게 잘 따라와줘서 애들한테 항상 너무 고마워❤"],
       p: ["화자"],
       a: [
         { text: "다음" },
@@ -257,7 +257,7 @@ function App() {
       ],
     },
     {
-      q: ["창캐미 너는 이렇게 비대면으로 교육봉사 해본 적 있어? 나는 이번이 처음인데 비대면 교육봉사도 좋은 거 같아!"],
+      q: ["나는 비대면 교육인데도 너무 재밌어~!! 창캐미 너는 어때?"],
       p: ["화자"],
       a: [
         { type: "E", text: "학생들을 실제로 만나고 싶지만 나는 비대면도 새롭고 좋은 거 같아!" },
@@ -323,15 +323,14 @@ function App() {
       ],
     },
     {
-      q: ["오늘도 어김없이 봉사활동을 잘 끝내고 집으로 돌아왔다 그런데 핸드폰을 확인해보니 팀원에게 문자가 왔다"],
+      q: ["오늘도 어김없이 봉사활동을 잘 끝내고 집으로 돌아왔다. \n 그런데 핸드폰을 확인해보니 팀원에게 문자가 왔다"],
       p: ["화자"],
       a: [
         { text: "다음" },
       ],
     },
     {
-      q: ["수업을 진행한지 벌써 1달이나 지났어!","학생들이 점점 익숙해지는 것 같은데 수업방식에 변화를 줘야 할까?", "네 생각은 어때?"
-      ],
+      q: ["수업을 진행한지 벌써 1달이나 지났어! \n 학생들이 점점 익숙해지는 것 같은데 수업방식에 변화를 줘야 할까? \n 네 생각은 어때?"],
       p: ["화자"],
       a: [
         { text: "다음" },
@@ -346,7 +345,7 @@ function App() {
       ],
     },
     {
-      q: ["CJ UNIT 에선 다음 기수가 사용할 교육 커리큘럼을 제작하는 하기에, 이를 위해 팀원들끼리 각자 주제를 정해오기로 했다. 그런데 한 팀원이 생각해온 주제의 방향성이 옳지 않은 것 같다."],
+      q: ["CJ UNIT 에선 다음 기수가 사용할 교육 커리큘럼을 제작하는 하기에, \n 이를 위해 팀원들끼리 각자 주제를 정해오기로 했다. \n 그런데 한 팀원이 생각해온 주제의 방향성이 옳지 않은 것 같다."],
       p: ["화자"],
       a: [
         { text: "다음" },
@@ -360,7 +359,7 @@ function App() {
       ],
     },
     {
-      q: ["커리큘럼이 조금 부족한 것 같아.   그냥 수정하자고 할까? 아니면..  만들어온 성의가 있으니 우선 설명을 더 들어볼까?"],
+      q: ["커리큘럼이 조금 부족한 것 같아.   그냥 수정하자고 할까? \n 아니면..  만들어온 성의가 있으니 우선 설명을 더 들어볼까?"],
       p: ["화자"],
       a: [
         { type: "T", text: "만드느라 고생했어! 그런데 이부분은 조금 수정해보자~ 그게 더 우리의 방향성에 맞을 것 같아." },
@@ -382,14 +381,14 @@ function App() {
       ],
     },
     {
-      q: ["TF 팀은  교육봉사, 홍보콘텐츠 발굴 외에도 다재다능한 대학생들이 모여 참여할 수 있는 특별한 경험을 가질 수 있는 활동이라네 !"],
+      q: ["TF 팀은  교육봉사, 홍보콘텐츠 발굴 외에도 다재다능한 대학생들이 \n 모여 참여할 수 있는 특별한 경험을 가질 수 있는 활동이라네 !"],
       p: ["화자"],
       a: [
         { text: "다음" },
       ],
     },
     {
-      q: ["8기에서는 바이럴테스트, chat gpt를 활용한 커리큘럼 개발, 홍보, 스마트 시티 제작, 메타버스 TF 가 있었지! "],
+      q: ["8기에서는 바이럴테스트, chat gpt를 활용한 커리큘럼 개발, \n 홍보, 스마트 시티 제작, 메타버스 TF 가 있었지! "],
       p: ["화자"],
       a: [
         { text: "다음" },
@@ -585,29 +584,39 @@ return (
           {page < 200 ? (
             <div className="questionItemlayout">
               <div className="chatListLayout">
-                <div className="chatBox">
+                <div className="rectangle1">
                   <div></div>
                   <div>{question}</div>
                 </div>
+                <div className="personListLayout">
+                  <div className="personBox">
+                    <div className="personText">{answer}</div>
+                  </div>
+                  </div>
               </div>
             </div>
           ) : (
             <div className="questionItemlayout">
               <div className="chatListLayout">
-                <div className="chatBox">
+                <div className="rectangle1">
                   <div></div>
                   <div>{question}</div>
                 </div>
+                <div className="personListLayout">
+                  <div className="personBox">
+                    <div className="personText">{answer}</div>
+                  </div>
+                  </div>
               </div>
             </div>
           )}
-    
 
         <div className="answerItemLayout">
           <div className="answerBox" onClick={handleClickNext}>
             다음
           </div>
         </div>
+        
       </div>
     </div>
   </div>
@@ -645,7 +654,7 @@ return (
         <button onClick={()=>{setPage(104)}}>이전</button></div>
       ) : page === 205 ? (
         <div className = "firstQuestionLayout">
-          <CustomPage question={"와~ 다른조지만 이렇게 인사하게 되니 너무 반갑네요 ! 같은 조로 활동은 못하겠지만, 종종 밥도 먹으며 한학기동안 우리만의 색을 찾아보아요 ~!"} answer={"질문"} />
+          <CustomPage question={"와~ 다른조지만 이렇게 인사하게 되니 너무 반갑네요 ! \n 같은 조로 활동은 못하겠지만, 종종 밥도 먹으며 한학기동안 우리만의 색을 찾아보아요 ~!"} answer={"창캐미"} />
         </div>
       ) : page === 105 ? (
         <div className = "firstQuestionLayout">
@@ -854,7 +863,7 @@ return (
                       <div className="chatListLayout">
                         {val.q.map((qval, qidx) => (
                           <div key={qidx} className="rectangle1">
-                            <div></div> <div className="text">{qval} </div>
+                            <div></div> <div>{qval} </div>
                           </div>
                         ))}
                       </div>

@@ -195,7 +195,7 @@ body {
   border: 5px solid #FFD84E;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  margin-bottom: 210px;
+  margin-bottom: 220px;
 }
 .personText {
   padding-top: 50%;
@@ -204,17 +204,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5px;
 }
 
 
 .answerItemLayout {
   display: flex;
   justify-content: flex-end;
-  display:flex;
   flex-direction: column;
   padding: 5px;
-  
 }
 .nextButton {
     align-items: center;
@@ -340,32 +337,19 @@ body {
   height: 200px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end;
+  text-align: center;
+  font-size: 27px;
+  white-space: pre-line;
+  line-height: 1.5em;
   background: rgba(255, 231, 134, 0.8);
   border: 5px solid #FFD84E;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   margin-bottom: 10px;
 }
-
-
-
-/* 질문 글꼴*/
-.text {
-  padding-top: 5%;
-  text-align: center;
-  font-size: 30px;
-  white-space: pre-line;
-  line-height: 1.5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 70px;
-}
-
-
 
 
 .firstlist{
