@@ -298,7 +298,7 @@ function App() {
       },
       {
         q: ["오늘은 어떤 포즈로 찍을까?"],
-        p: ["화자"],
+        p: ["팀원"],
         a: [
           {
             type: "J",
@@ -311,7 +311,7 @@ function App() {
         q: [
           "오늘도 수업 수고하셨어요! \n수업 후기는 수업퀄리티를 위해 반드시 기록해야할 사항들이니 기간에 맞춰 작성해주세요~",
         ],
-        p: ["화자"],
+        p: ["담당자님"],
         a: [{ text: "다음" }],
       },
       {
@@ -323,7 +323,7 @@ function App() {
         q: [
           "휴우… 오늘도 열심히 수업했더니 기운이 없다.. ㅎㅎ 수업후기는 언제 작성할까?",
         ],
-        p: ["화자"],
+        p: ["창캐미"],
         a: [{ text: "다음" }],
       },
       {
@@ -414,43 +414,43 @@ function App() {
         q: [
           " 여기서 잠깐 !”TF 팀” 이 뭔지 잘 모를 사람들을 위해 창캠박사가 설명해주러 왔다네.",
         ],
-        p: ["화자"],
+        p: ["창캠박사"],
         a: [{ text: "다음" }],
       },
       {
         q: [
           "TF 팀은  교육봉사, 홍보콘텐츠 발굴 외에도 다재다능한 대학생들이 \n 모여 참여할 수 있는 특별한 경험을 가질 수 있는 활동이라네 !",
         ],
-        p: ["화자"],
+        p: ["창캠박사"],
         a: [{ text: "다음" }],
       },
       {
         q: [
           "8기에서는 바이럴테스트, chat gpt를 활용한 커리큘럼 개발, \n 홍보, 스마트 시티 제작, 메타버스 TF 가 있었지! ",
         ],
-        p: ["화자"],
+        p: ["창캠박사"],
         a: [{ text: "다음" }],
       },
       {
         q: ["이렇게 재밌고 특별한 활동도 있다니 ! 지원을 하지 않을 이유가 없지"],
-        p: ["화자"],
+        p: ["창캐미"],
         a: [{ text: "다음" }],
       },
       {
         q: ["다 썼다 !! 이제 제출하고 결과를 기다려야지"],
-        p: ["화자"],
+        p: ["창캐미"],
         a: [{ text: "다음" }],
       },
       {
         q: [
           "며칠 후, 합격자 명단이 올라왔고 창캐미는 자신의의 이름이 있는걸 발견했다.",
         ],
-        p: ["화자"],
+        p: ["창캐미"],
         a: [{ text: "다음" }],
       },
       {
         q: ["야호 !! 내가 지원했던 TF팀에 선정되었다 !! 이때 드는 생각은?"],
-        p: ["화자"],
+        p: ["창캐미"],
         a: [
           {
             type: "N",
@@ -900,28 +900,28 @@ return (
           />
         </div>
       ) : page === 214 ? (
-        <div className="officeLayout">
+        <div className="office5Layout">
           <CustomPage
             question={"헉헉..아슬아슬하게 도착..! 뛰었더니 너무 힘드네.."}
             answer={"창캐미"}
           />
         </div>
       ) : page === 121 ? (
-        <div className="officeLayout">
+        <div className="office2Layout">
           <CustomPage
             question={"학생이 속상하지 않게 달래면서 오류를 찾아야지!"}
             answer={"창캐미"}
           />
         </div>
       ) : page === 221 ? (
-        <div className="officeLayout">
+        <div className="office2Layout">
           <CustomPage
             question={"최대한 빠르게 오류를 찾자"}
             answer={"창캐미"}
           />
         </div>
       ) : page === 129 ? (
-        <div className="office2Layout">
+        <div className="office3Layout">
           <CustomPage
             question={
               "오호 그런 방법이 있구나! 그러면 재밌는 게임을 만들어서 학생들과 같이 해봐야겠다! 고마워>_<"
@@ -930,7 +930,7 @@ return (
           />
         </div>
       ) : page === 229 ? (
-        <div className="office2Layout">
+        <div className="office3Layout">
           <CustomPage
             question={
               "오호 그런 방법이 있구나! 그럼 다음부터는 반장을 뽑아서 진행해봐야겠다! 고마워>_<"
@@ -955,12 +955,12 @@ return (
           />
         </div>
       ) : page === 136 ? (
-        <div className="office3Layout">
+        <div className="office4Layout">
           <CustomPage
             question={
               "대박! 소품 너무 귀여워>_<  우리 이거 사용해서 찍어보자!!!"
             }
-            answer={"창캐미"}
+            answer={"팀원"}
           />
         </div>
       ) : page === 236 ? (
@@ -975,7 +975,7 @@ return (
           <CustomPage question={"휴 작성 다했다!"} answer={"창캐미"} />
         </div>
       ) : page === 240 ? (
-        <div className="officeLayout">
+        <div className="office5Layout">
           <CustomPage
             question={"내일 설마 잊어버리지는 않겠지?"}
             answer={"창캐미"}
@@ -1060,19 +1060,21 @@ return (
                   display: page === idx + 1 ? "flex" : "none",
                   backgroundImage: `url(${
                     idx === 0
-                      ? require("./image/발대식.png")
+                      ? require("./image/발대식+결심.png")
                       : idx === 1
                       ? require("./image/발대식+담당자.png")
                       : idx === 2
                       ? require("./image/발대식+가방.png")
                       : idx < 5
-                      ? require("./image/발대식.png")
+                      ? require("./image/발대식+창캐미.png")
                       : idx === 5
-                      ? require("./image/발대식+담당자.png")
+                      ? require("./image/발대식.png")
                       : idx === 6
-                      ? require("./image/발대식+담당자흐림.png")
+                      ? require("./image/발대식+담당자.png")
                       : idx < 8
                       ? require("./image/비행기내부.png")
+                      : idx === 8
+                      ? require("./image/발대식+담당자.png")
                       : idx < 10
                       ? require("./image/본사배경.png")
                       : idx < 12
@@ -1082,7 +1084,7 @@ return (
                       : idx === 13
                       ? require("./image/집+고민.png")
                       : idx === 14
-                      ? require("./image/본사+기쁜.png")
+                      ? require("./image/본사+결심.png")
                       : idx === 16
                       ? require("./image/본사+기쁜.png")
                       : idx === 15
@@ -1104,43 +1106,45 @@ return (
                       : idx === 27
                       ? require("./image/본사+결심.png")
                       : idx === 28
-                      ? require("./image/본사+결심흐림.png")
+                      ? require("./image/본사+팀원.png")
                       : idx === 29
                       ? require("./image/본사+기쁜.png")
                       : idx < 32
                       ? require("./image/본사+팀원.png")
                       : idx === 32
-                      ? require("./image/본사+팀원흐림.png")
+                      ? require("./image/본사+팀원.png")
                       : idx === 33
                       ? require("./image/본사+담당자.png")
                       : idx === 34
                       ? require("./image/본사+팀원2.png")
                       : idx === 35
-                      ? require("./image/본사+팀원2흐림.png")
+                      ? require("./image/본사+팀원2.png")
                       : idx === 36
                       ? require("./image/본사+담당자.png")
                       : idx === 38
                       ? require("./image/본사+고민.png")
                       : idx === 39
-                      ? require("./image/본사+고민흐림.png")
+                      ? require("./image/본사+고민.png")
                       : idx < 40
                       ? require("./image/본사배경.png")
+                      : idx === 40
+                      ? require("./image/집.png")
                       : idx === 42
                       ? require("./image/집+문자.png")
                       : idx === 43
-                      ? require("./image/집흐림.png")
-                      : idx < 44
-                      ? require("./image/집.png")
-                      : idx === 45
-                      ? require("./image/본사+팀원.png")
+                      ? require("./image/집+고민.png")
+                      : idx === 44
+                      ? require("./image/본사+고민.png")
+                      : idx === 46
+                      ? require("./image/본사+고민.png")
                       : idx === 47
                       ? require("./image/집.png")
-                      : idx < 47
-                      ? require("./image/본사배경.png")
                       : idx < 51
                       ? require("./image/집+박사.png")
+                      : idx === 51
+                      ? require("./image/집+기쁜.png")
                       : idx === 53
-                      ? require("./image/집+합격.png")
+                      ? require("./image/집+TF합격.png")
                       : idx < 55
                       ? require("./image/집.png")
                       : ""
