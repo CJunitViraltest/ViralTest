@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+
 .mbtilayout {
   width : 100%;
   font-size: 14px;
@@ -67,6 +71,7 @@ body {
   font-size: 100px;
   font-weight: bold;
   margin-bottom: 30px;
+  
 }
 
 @media (max-width: 768px) {
@@ -84,6 +89,7 @@ body {
   }
 }
 .startButton {
+  font-family: 'Jua', sans-serif;
   position: fixed;
   left: 50%;
   bottom: 50px;
@@ -165,7 +171,7 @@ body {
 
 
 .questionItemlayout {
- justify-content: center;
+  justify-content: center;
   font-family: 'Jua', sans-serif;
   display: flex;
   flex:1;
@@ -206,14 +212,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5px;
+}
+.chaeyeon {
+  margin-bottom: 20px;
 }
 
-
 .answerItemLayout {
-  display: flex;
   justify-content: flex-end;
-  flex-direction: column;
+  width: 100%;
   padding: 5px;
+  display:flex;
+  flex-direction: column;
 }
 .nextButton {
     align-items: center;
@@ -308,29 +318,27 @@ body {
 /* 선택지 사각형 */
 .answerBox {
   position: relative;
-  right : 0%;
-  bottom : 200px;
-  flex-direction: column;
+  margin: 0 auto; /* 가운데 정렬을 위해 추가 */
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #FFD84E;
   box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.4);
   border-radius: 70px;
   box-sizing: border-box;
   align-items: center;
   height: 100px;
-  width: 1250px;
+  width: 1000px;
   text-align: center;
   font-size: 20px;
-  margin-left: 350px;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   padding: 40px;
 
 }
 
 
 /* 질문 사각형 */
-.rectangle1 {
+.rectangle2 {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
@@ -351,6 +359,15 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   margin-bottom: 10px;
+}
+.next {
+ display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  color: #FCCD26;
+  font-size: x-large;
+  margin-top: 140px;
 }
 
 
@@ -520,4 +537,40 @@ body {
   width: 100vw;
   height: auto;
   color: #413730;
+}
+
+.resultLayout{
+  width: 100%;
+  background-image: url('./image/start_background.png');
+  background-size: cover;
+}
+
+.resultContainer{
+  width: 80%;
+  transform: translate(15%, 5%);
+}
+
+.resultDetail{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 18px;
+}
+
+.titleWrapper{
+  margin-bottom: 20px;
+  background-color: white;
+  width: 75vw;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.buttonWrapper{
+  background-color: white;
+  width: 75vw;
+  text-align: center;
+  border-radius: 20px;
 }
