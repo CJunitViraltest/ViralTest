@@ -1109,7 +1109,6 @@ function App() {
         <CustomPage question={"세번째 질문 조건페이지"} answer={"질문"} />
       ) : page <= questionList.length ? (
         <div className="questionLayout">
-
           <div className="questionAnswerLayout">
             {questionList.map((val, idx) => (
               <div
@@ -1211,6 +1210,7 @@ function App() {
                   })`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
+                  backgroundColor: page === 56 ? "black" : "transparent", // page가 55일 때 검정색 배경을 설정합니다.
                 }}
                 key={idx}
               >
@@ -1238,7 +1238,7 @@ function App() {
                     page === 50 ||
                     page === 51 ||
                     page === 52 ||
-                    page === 54 
+                    page === 54
                   ) && (
                     <div className="answerItemLayout">
                       {val.a.map((aval, aidx) => (
@@ -1282,7 +1282,7 @@ function App() {
                         page === 49 ||
                         page === 50 ||
                         page === 51 ||
-                        page === 54 
+                        page === 54
                       ) {
                         setPage(page + 1);
                       } else if (page === 9) {
@@ -1295,7 +1295,6 @@ function App() {
                       ) {
                         setPage(page + 3);
                       } else if (
-                   
                         page === 34 ||
                         page === 41 ||
                         page === 45 ||
@@ -1331,7 +1330,7 @@ function App() {
                             page === 50 ||
                             page === 51 ||
                             page === 52 ||
-                            page === 54  ) && <div className="next">다음 ▶</div>}
+                            page === 54) && <div className="next">다음 ▶</div>}
                         </div>
                       ))}
                     </div>
@@ -1394,17 +1393,16 @@ function App() {
                   height: "66vh",
                   textAlign: "center",
                   borderRadius: "20px",
-                  backgroundSize: "contain"
+                  backgroundSize: "contain",
                 }}
-              >
-              </div>
+              ></div>
               <div
                 style={{
                   position: "relative",
                   marginLeft: "2vw",
                   backgroundColor: "white",
-                  width:"49vw",
-                  borderRadius: "20px"
+                  width: "49vw",
+                  borderRadius: "20px",
                 }}
               >
                 {mbtiContents.contents.map((val, idx) =>
