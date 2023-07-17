@@ -3,6 +3,47 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import { type } from "@testing-library/user-event/dist/type";
 import styles from "./App.css";
+import html2canvas from 'html2canvas';
+
+function captureScreen() {
+  const elementToCapture = document.body;
+
+  // 원하는 영역의 비율을 지정합니다.
+  const captureRatio = 0.8; // 50% 크기로 캡처
+
+  // 원본 요소의 크기를 가져옵니다.
+  const elementWidth = elementToCapture.offsetWidth;
+  const elementHeight = elementToCapture.offsetHeight;
+
+  // 캡처할 영역의 크기를 계산합니다.
+  const captureWidth = elementWidth * captureRatio;
+  const captureHeight = elementHeight * captureRatio;
+
+  // 캡처할 영역의 중심 좌표를 계산합니다.
+  const captureX = (elementWidth - captureWidth) / 2;
+  const captureY = (elementHeight - captureHeight) / 2 - 70;
+
+  html2canvas(elementToCapture, {
+    x: captureX,
+    y: captureY,
+    width: captureWidth,
+    height: captureHeight,
+  }).then(function (canvas) {
+    const dataURL = canvas.toDataURL();
+
+    // 이미지를 다운로드할 때 사용할 링크 엘리먼트를 동적으로 생성합니다.
+    const link = document.createElement("a");
+    link.href = dataURL;
+    link.download = "capture.png"; // 다운로드될 이미지 파일의 이름을 지정합니다.
+    document.body.appendChild(link);
+
+    // 링크를 클릭하여 이미지를 다운로드합니다.
+    link.click();
+
+    // 링크 엘리먼트를 제거합니다.
+    document.body.removeChild(link);
+  });
+}
 
 function App() {
   const setVh = () => {
@@ -897,7 +938,7 @@ function App() {
           ></div>
           <div className="rresultContainer">
             <div className="buttonWrapper">
-              <button className="resultPageButton" onClick={() => setPage(56)}>
+              <button className="resultPageButton" onClick={() => setPage(57)}>
                 뒤로가기
               </button>
             </div>
@@ -1206,13 +1247,13 @@ function App() {
                       ? require("./image/집+TF합격.png")
                       : idx < 55
                       ? require("./image/집.png")
-                      :  idx === 55
-                      ? require("./image/56페이지.jpg")
-                      :""
+                      : idx === 55
+                      ? require("./image/극장.png")
+                      : ""
                   })`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
-               //   backgroundColor: page === 56 ? "black" : "transparent", // page가 55일 때 검정색 배경을 설정합니다.
+                  //   backgroundColor: page === 56 ? "black" : "transparent", // page가 55일 때 검정색 배경을 설정합니다.
                 }}
                 key={idx}
               >
@@ -1460,7 +1501,9 @@ function App() {
               <button className="resultPageButton" onClick={() => setPage(100)}>
                 다른 색상보기
               </button>
-              <button className="resultPageButton">공유하기</button>
+              <button className="resultPageButton" onClick={captureScreen}>
+                캡쳐하기
+              </button>
             </div>
           </div>
         </div>
