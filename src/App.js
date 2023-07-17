@@ -802,16 +802,6 @@ function App() {
     setmbtiContents(mc.filter((val) => val.mbti === mbti)[0]);
   }
   const CustomPage = ({ question, answer }) => {
-    const handleClickNextHund = () => {
-      setPage(page - 99);
-    };
-
-    const handleClickNextTwoHund = () => {
-      setPage(page - 199);
-    };
-
-    const handleClickNext =
-      page < 200 ? handleClickNextHund : handleClickNextTwoHund;
 
     return (
       <div className="questionLayout">
