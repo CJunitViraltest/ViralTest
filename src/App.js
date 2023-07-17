@@ -1206,11 +1206,13 @@ function App() {
                       ? require("./image/집+TF합격.png")
                       : idx < 55
                       ? require("./image/집.png")
-                      : ""
+                      :  idx === 55
+                      ? require("./image/56페이지.jpg")
+                      :""
                   })`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
-                  backgroundColor: page === 56 ? "black" : "transparent", // page가 55일 때 검정색 배경을 설정합니다.
+               //   backgroundColor: page === 56 ? "black" : "transparent", // page가 55일 때 검정색 배경을 설정합니다.
                 }}
                 key={idx}
               >
