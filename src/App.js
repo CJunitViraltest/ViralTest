@@ -1,8 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
-import { type } from "@testing-library/user-event/dist/type";
-import styles from "./App.css";
 import html2canvas from 'html2canvas';
 
 function captureScreen() {
