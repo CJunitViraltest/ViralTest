@@ -834,7 +834,7 @@ function App() {
                   >
                     <div></div>
                     <div>
-                      {question} {page}
+                      {question}
                     </div>
 
                     <div className="next">다음 ▶</div>
